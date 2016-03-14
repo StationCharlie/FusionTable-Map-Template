@@ -38,30 +38,7 @@
         <div class='col-md-4'>
           <p>Use the functions below to display the required information</p>
           <div class='well'>
-           <h5>
-              Address <small>(<a id='find_me' href='#'>find me</a>)</small>
-            </h5>
-            <p>
-              <input class='form-control' id='search_address' placeholder='Enter an address or an intersection' type='text' />
-            </p>
-            <p>
-              
-                within
-                <select id='search_radius'>
-                  <option value=805>1/2 mile</option>
-                  <option value=1610>1 mile</option>
-                   <option value=3220>2 miles</option>
-                   <option value=8050>5 miles</option>
-                   <option value=16100>10 miles</option>
-                   <option value=40250>25 miles</option>
-                   <option value=80500>50 miles</option>
-                   <option value=161000>100 miles</option>
-                   <option value=402500>250 miles</option>
-                   <option value=805000>500 miles</option>
-                   <option value=1610000>1000 miles</option>
-                </select>
-              
-            </p> 
+           
 
 <ul class='inputs-list unstyled'>
   <li>
@@ -95,7 +72,29 @@
 </ul>
 <h5>Search by name</h5>
         <input class=form-control id=text_search placeholder='Enter a name' type="text"/>
-
+        
+<h5>Search by address <small>(<a id='find_me' href='#'>find me</a>)</small> </h5>
+            <p>
+              <input class='form-control' id='search_address' placeholder='Enter an address or an intersection' type='text' />
+            </p>
+            <p>
+              
+                within
+                <select id='search_radius'>
+                  <option value=805>1/2 mile</option>
+                  <option value=1610>1 mile</option>
+                   <option value=3220>2 miles</option>
+                   <option value=8050>5 miles</option>
+                   <option value=16100>10 miles</option>
+                   <option value=40250>25 miles</option>
+                   <option value=80500>50 miles</option>
+                   <option value=161000>100 miles</option>
+                   <option value=402500>250 miles</option>
+                   <option value=805000>500 miles</option>
+                   <option value=1610000>1000 miles</option>
+                </select>
+              
+            </p> 
             <br />
             <a class='btn btn-primary' id='search' href='#'>
               <i class='glyphicon glyphicon-search'></i>
