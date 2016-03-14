@@ -99,6 +99,7 @@
         self.fusionTable = self.searchrecords;
         self.searchrecords.setMap(map);
         self.getCount(whereClause);
+        
     };
 
 
@@ -163,6 +164,19 @@
         self.whereClause = self.locationColumn + " not equal to ''";
         
         //-----custom filters-----
+        
+        var type_column = "'type'";
+var searchType = type_column + " IN (-1,";
+if ( $("#cbType1").is(':checked')) searchType += "1,";
+if ( $("#cbType2").is(':checked')) searchType += "2,";
+if ( $("#cbType3").is(':checked')) searchType += "3,";
+if ( $("#cbType4").is(':checked')) searchType += "4,";
+self.whereClause += " AND " + searchType.slice(0, searchType.length - 1) + ")";
+
+var text_search = $("#text_search").val().replace("'", "\\'");
+if (text_search != '')
+  self.whereClause += " AND 'name' contains ignoring case '" + text_search + "'";
+        
         //-----end of custom filters-----
 
         self.getgeoCondition(address, function (geoCondition) {

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang='en'>
   <head>
-    <title>Searchable Map Template Demo</title>
+    <title>Space Race Info Map</title>
     <meta charset='utf-8' />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta content='' name='description' />
@@ -23,7 +23,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class='navbar-brand' href='index.html'>Searchable Map Template</a>
+          <a class='navbar-brand' href='http://www.stationcharlie.com'>Space Race Info Map</a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
@@ -36,46 +36,65 @@
     <div class='container-fluid'>
       <div class='row'>
         <div class='col-md-4'>
-          <p>This is a demo of <a href='http://derekeder.com'>Derek Eder's</a> <a href='http://derekeder.com/searchable_map_template/'>Searchable Map Template</a> using Google <a href='http://support.google.com/fusiontables/answer/2571232?hl=en&ref_topic=1652595'>Fusion Tables</a>. Use this section to give a little context to your map.</p>
+          <p>Use the functions below to display the required information</p>
           <div class='well'>
-            <h4>
-              Address <small>(<a id='find_me' href='#'>find me</a>)</small>
-            </h4>
+           
+
+<ul class='inputs-list unstyled'>
+  <li>
+    <label class='checkbox inline'>
+      <input type='checkbox' id='cbType1' />
+      <span class='filter-box filter-red'></span>
+      Private Companies
+    </label>
+  </li>
+  <li>
+    <label class='checkbox inline'>
+      <input type='checkbox' id='cbType2' />
+      <span class='filter-box filter-green'></span>
+      Launch Sites
+    </label>
+  </li>
+  <li>
+    <label class='checkbox inline'>
+      <input type='checkbox' id='cbType3' />
+      <span class='filter-box filter-yellow'></span>
+      Development Facilities
+    </label>
+  </li>
+  <li>
+    <label class='checkbox inline'>
+      <input type='checkbox' id='cbType4' />
+      <span class='filter-box filter-blue'></span>
+      National Space Agencies
+    </label>
+  </li>
+</ul>
+<h5>Search by name</h5>
+        <input class=form-control id=text_search placeholder='Enter a name' type="text"/>
+        
+<h5>Search by address <small>(<a id='find_me' href='#'>find me</a>)</small> </h5>
             <p>
               <input class='form-control' id='search_address' placeholder='Enter an address or an intersection' type='text' />
             </p>
             <p>
-              <label>
+              
                 within
                 <select id='search_radius'>
-                  <option value='400'>2 blocks</option>
-                  <option value='805'>1/2 mile</option>
-                  <option value='1610'>1 mile</option>
-                  <option value='3220'>2 miles</option>
+                  <option value=805>1/2 mile</option>
+                  <option value=1610>1 mile</option>
+                   <option value=3220>2 miles</option>
+                   <option value=8050>5 miles</option>
+                   <option value=16100>10 miles</option>
+                   <option value=40250>25 miles</option>
+                   <option value=80500>50 miles</option>
+                   <option value=161000>100 miles</option>
+                   <option value=402500>250 miles</option>
+                   <option value=805000>500 miles</option>
+                   <option value=1610000>1000 miles</option>
                 </select>
-              </label>
-            </p>
-
-            <br />
-            <h4>Custom filters and views</h4>
-            <p>Take a look at the <a href='https://github.com/derekeder/FusionTable-Map-Template/wiki/Filter-examples'>wiki</a> to see how to add your own custom filters and views like:</p>
-            <div class='row'>
-              <div class='col-md-6'>
-                <ul>
-                  <li><a href='https://github.com/derekeder/FusionTable-Map-Template/wiki/Filter-examples#wiki-checkboxes'>Checkboxes</a></li>
-                  <li><a href='https://github.com/derekeder/FusionTable-Map-Template/wiki/Filter-examples#wiki-radiobuttons'>Radio buttons</a></li>
-                  <li><a href='https://github.com/derekeder/FusionTable-Map-Template/wiki/Filter-examples#wiki-drop-down-lists'>Drop down lists</a></li>
-                  <li><a href='https://github.com/derekeder/FusionTable-Map-Template/wiki/Filter-examples#wiki-textsearches'>Text searches</a></li>
-                </ul>
-              </div>
-              <div class='col-md-6'>
-                <ul>
-                  <li><a href='https://github.com/derekeder/FusionTable-Map-Template/wiki/Filter-examples#wiki-sliders'>Sliders</a></li>
-                  <li><a href='https://github.com/derekeder/FusionTable-Map-Template/wiki/Filter-examples#wiki-date-sliders'>Date sliders</a></li>
-                  <li><a href='https://github.com/derekeder/FusionTable-Map-Template/wiki/List-search-results'>Results lists</a></li>
-                </ul>
-              </div>
-            </div>
+              
+            </p> 
             <br />
             <a class='btn btn-primary' id='search' href='#'>
               <i class='glyphicon glyphicon-search'></i>
@@ -88,6 +107,8 @@
           </div>
           <div class='alert alert-info' id='result_box' ><strong id='result_count'></strong></div>
         </div>
+        
+
         <div class='col-md-8'>
           <noscript>
             <div class='alert alert-info'>
@@ -95,13 +116,17 @@
               <p>Please enable JavaScript to view the map.</p>
             </div>
           </noscript>
+       
           <div id='map_canvas'></div>
           <p class='pull-right'>
-            <a href='http://derekeder.com/searchable_map_template/'>Searchable Map Template</a> by <a href='http://derekeder.com'>Derek Eder</a>.
+            <!-- <a href='http://derekeder.com/searchable_map_template/'>Searchable Map Template</a> by <a href='http://derekeder.com'>Derek -->
+            Space Race Info Map v1 by <a href='http://www.stationcharlie.com'>StationCharlie.com</a>
         </p>
         </div>
       </div>
     </div>
+    
+
 
     <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="js/jquery.address.js"></script>
@@ -119,11 +144,12 @@
         
         $(function() {
           var myMap = new MapsLib({
-            fusionTableId:      "1m4Ez9xyTGfY2CU6O-UgEcPzlS0rnzLU93e4Faa0",
-            googleApiKey:       "AIzaSyA3FQFrNr5W2OEVmuENqhb2MBB2JabdaOY",
-            locationColumn:     "geometry",
-            map_center:         [41.8781136, -87.66677856445312],
-            locationScope:      "chicago"
+            fusionTableId:      "1T5Kty-_lBIWDqNH1HHCiY_MyDI8vPtxT_hrqcfc1",
+            googleApiKey:       "AIzaSyBYE9fwgyI2Hqn3gPoyvuIko9D6DYMD35o",
+            locationColumn:     "location",
+            map_center:         [20, 0],
+            locationScope:      "",
+            defaultZoom:        2,
           });
 
           var autocomplete = new google.maps.places.Autocomplete(document.getElementById('search_address'));
