@@ -12,6 +12,6 @@ Released under the MIT License.
 
 See [LICENSE](https://github.com/derekeder/FusionTable-Map-Template/blob/master/LICENSE) for more details.
 
-Based on the <a href='http://derekeder.com/searchable_map_template/'>Searchable Map Template</a> by by <a href='http://derekeder.com'>Derek Eder</a>.
+Based on the <a href='http://derekeder.com/searchable_map_template/'>Searchable Map Template</a> by <a href='http://derekeder.com'>Derek Eder</a>.
 
 
