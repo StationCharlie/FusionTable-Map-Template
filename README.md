@@ -1,4 +1,4 @@
-# Space Race Info Map
+# Project Blue Marble
 
 [See the working demo &raquo;](http://charliehotel.github.io/Project-Blue-Marble/)
 
