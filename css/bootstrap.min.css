@@ -6,5 +6,5 @@
 ul, ol {padding-left: 15px;} 
 .span6 {width: 48.717948717948715%; float: left;}
 .well { overflow: hidden; padding-top: 5px; padding-bottom: 5px;}
-..col-md-4 {padding-right: 3px;}
-..col-md-8 {padding-left: 3px;}
+.col-md-4 {padding-right: 3px;}
+.col-md-8 {padding-left: 3px;}
