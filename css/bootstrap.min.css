@@ -6,3 +6,4 @@
  .row-fluid .span6 {width: 48.717948717948715%; margin: 0;}
  .well {padding: 15px;}
  [class*="span"]:first-child {margin-left: 0;}
+ .row-fluid {width: 100%;}
