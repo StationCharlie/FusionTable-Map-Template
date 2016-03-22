@@ -13,4 +13,4 @@ ul, ol {padding-left: 15px;}
 .btn-primary {color: #eee; background-color: #c33; border-color: #c33;}
 .btn-primary:hover {border-color: #c33; background-image: linear-gradient(to bottom,#c33,#f44336);}
 .navbar-header .navbar-brand {color: #c33;}
-label (font-weight: normal;)
+label {font-weight: normal;}
