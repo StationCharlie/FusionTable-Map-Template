@@ -172,13 +172,13 @@ if ( $("#cbType1").is(':checked')) searchType += "1,";
 if ( $("#cbType2").is(':checked')) searchType += "0,";
 self.whereClause += " AND " + searchType.slice(0, searchType.length - 1) + ")";
 
-// var type_column = "'business-type'";
-// var tempWhereClause = [];
-// if ( $("#cbType3").is(':checked')) tempWhereClause.push("Operator");
-// if ( $("#cbType4").is(':checked')) tempWhereClause.push("Retailer");
-// if ( $("#cbType5").is(':checked')) tempWhereClause.push("Manufacturer");
-// if ( $("#cbType6").is(':checked')) tempWhereClause.push("Service Provider");
-// self.whereClause += " AND " + type_column + " IN ('" + tempWhereClause.join("','") + "')";
+var business_type_column = "'business-type'";
+var tempWhereClause = [];
+if ( $("#cbType3").is(':checked')) tempWhereClause.push("Operator");
+if ( $("#cbType4").is(':checked')) tempWhereClause.push("Retailer");
+if ( $("#cbType5").is(':checked')) tempWhereClause.push("Manufacturer");
+if ( $("#cbType6").is(':checked')) tempWhereClause.push("Service Provider");
+self.whereClause += " AND " + business_type_column + " IN ('" + tempWhereClause.join("','") + "')";
 
 var text_search = $("#text_search").val().replace("'", "\\'");
 if (text_search != '')
