@@ -8,7 +8,7 @@ ul, ol {padding-left: 15px;}
 .well { overflow: hidden; padding-top: 5px; padding-bottom: 5px; margin-bottom: 11px;}
 .col-md-4 {padding-right: 10px;}
 .col-md-8 {padding-left: 10px;}
-.alert-info {font-size: 20px; text-align: center; color: #eee; background-color: #c33; border-color: #c33;}
+.alert-info {font-size: 14px; text-align: center; color: #eee; background-color: #c33; border-color: #c33;}
 .alert {padding: 4px; margin-bottom: 10px;}
 .btn-primary {color: #eee; background-color: #c33; border-color: #c33;}
 .btn-primary:hover {border-color: #c33; background-image: linear-gradient(to bottom,#c33,#f44336);}
