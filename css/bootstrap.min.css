@@ -8,4 +8,5 @@ ul, ol {padding-left: 15px;}
 .well { overflow: hidden; padding-top: 5px; padding-bottom: 5px;}
 .col-md-4 {padding-right: 10px;}
 .col-md-8 {padding-left: 10px;}
-.alert-info {font-size: 20px; text-align: center;}
+.alert-info {font-size: 20px; text-align: center; color: #eee; background-color: #c33; border-color: #c33;}
+
