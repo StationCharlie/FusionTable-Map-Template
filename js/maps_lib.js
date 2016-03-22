@@ -166,7 +166,7 @@
         
         //-----custom filters-----
         
-        var type_column = "'type'";
+        var type_column = "'listing-type'";
 var searchType = type_column + " IN (-1,";
 if ( $("#cbType1").is(':checked')) searchType += "1,";
 if ( $("#cbType2").is(':checked')) searchType += "2,";
@@ -317,7 +317,7 @@ if (text_search != '')
     
     MapsLib.prototype.getList = function(whereClause) {
     var self = this;
-    var selectColumns = 'name, long-name, type-text, location ';
+    var selectColumns = 'name, business-type, country, icon';
 
     self.query({ 
       select: selectColumns, 
