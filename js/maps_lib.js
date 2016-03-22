@@ -6,7 +6,7 @@
 
         this.recordName = options.recordName || "result"; //for showing a count of results
         this.recordNamePlural = options.recordNamePlural || "results";
-        this.searchRadius = options.searchRadius || 805; //in meters ~ 1/2 mile
+        this.searchRadius = options.searchRadius || 805; //in meters ~ 1/2su mile
 
         // the encrypted Table ID of your Fusion Table (found under File => About)
         this.fusionTableId = options.fusionTableId || "",
@@ -166,13 +166,27 @@
         
         //-----custom filters-----
         
-        var type_column = "'type'";
+        var type_column = "'listing-type'";
 var searchType = type_column + " IN (-1,";
 if ( $("#cbType1").is(':checked')) searchType += "1,";
-if ( $("#cbType2").is(':checked')) searchType += "2,";
-if ( $("#cbType3").is(':checked')) searchType += "3,";
-if ( $("#cbType4").is(':checked')) searchType += "4,";
+if ( $("#cbType2").is(':checked')) searchType += "0,";
 self.whereClause += " AND " + searchType.slice(0, searchType.length - 1) + ")";
+
+//var type_column = "'business-type'";
+//var tempWhereClause = [];
+//if ( $("#cbType3").is(':checked')) tempWhereClause.push("FAA 333 Exemption Holder");
+//if ( $("#cbType4").is(':checked')) tempWhereClause.push("Australian UAS Operator Certificate Holder");
+//if ( $("#cbType5").is(':checked')) tempWhereClause.push("South African ROC Holder");
+//if ( $("#cbType6").is(':checked')) tempWhereClause.push("UK CAA approved commercial Small Unmanned Aircraft (SUA) operator");
+//self.whereClause += " AND " + type_column + " IN ('" + tempWhereClause.join("','") + "')";
+
+var type_column = "'business-category'";
+var tempWhereClause = [];
+if ( $("#cbType3").is(':checked')) tempWhereClause.push("Operator");
+if ( $("#cbType4").is(':checked')) tempWhereClause.push("Retailer");
+if ( $("#cbType5").is(':checked')) tempWhereClause.push("Manufacturer");
+if ( $("#cbType6").is(':checked')) tempWhereClause.push("Service Provider");
+self.whereClause += " AND " + type_column + " IN ('" + tempWhereClause.join("','") + "')";
 
 var text_search = $("#text_search").val().replace("'", "\\'");
 if (text_search != '')
@@ -317,7 +331,7 @@ if (text_search != '')
     
     MapsLib.prototype.getList = function(whereClause) {
     var self = this;
-    var selectColumns = 'name, long-name, type-text, location ';
+    var selectColumns = 'name, business-type, location, website';
 
     self.query({ 
       select: selectColumns, 
