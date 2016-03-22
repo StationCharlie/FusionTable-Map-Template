@@ -6,7 +6,7 @@
 
         this.recordName = options.recordName || "result"; //for showing a count of results
         this.recordNamePlural = options.recordNamePlural || "results";
-        this.searchRadius = options.searchRadius || 805; //in meters ~ 1/2 mile
+        this.searchRadius = options.searchRadius || 805; //in meters ~ 1/2su mile
 
         // the encrypted Table ID of your Fusion Table (found under File => About)
         this.fusionTableId = options.fusionTableId || "",
@@ -331,7 +331,7 @@ if (text_search != '')
     
     MapsLib.prototype.getList = function(whereClause) {
     var self = this;
-    var selectColumns = 'name, business-type, country, icon';
+    var selectColumns = 'name, business-type, location, website';
 
     self.query({ 
       select: selectColumns, 
