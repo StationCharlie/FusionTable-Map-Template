@@ -42,6 +42,6 @@ ul, ol {padding-left: 15px;}
 .alert {padding: 4px; margin-bottom: 10px;}
 .btn-primary {color: #eee; background-color: #c33; border-color: #c33;}
 .btn-primary:hover {border-color: #c33; background-image: linear-gradient(to bottom,#c33,#f44336);}
-.navbar-header .navbar-brand {color: #c33;}
+.navbar-header .navbar-brand {color: #c33; float: right;}
 label {font-weight: normal;}
 /* .logo {float: right;} */
