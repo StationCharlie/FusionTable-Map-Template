@@ -1,4 +1,4 @@
-a { color: #4B58A6; }
+a { color: #4B58A6; padding-left: 5px; padding-right: 5px; }
 a:hover { color: #4B58A6; }
 
 #map_canvas img {
