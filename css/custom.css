@@ -48,3 +48,10 @@ label {font-weight: normal;}
 .navbar {margin-bottom: 10px;}
 
 hr {margin-top: 5px; margin-bottom: 5px;}
+
+#listCanvas {
+	color: #000;
+	height:430px;
+	overflow:scroll;} 
+
+#viewmode {padding: 6px 6px;}
