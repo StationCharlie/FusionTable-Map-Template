@@ -359,6 +359,7 @@ if (text_search != '')
         template = "\
           <div class='row-fluid item-list'>\
             <div class='span12'>\
+                <dl class='dl-horizontal'>\
               <strong>" + data[row][0] + "</strong>\
               <br />\
               " + data[row][1] + "\
