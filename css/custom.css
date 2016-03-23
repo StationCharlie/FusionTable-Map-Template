@@ -6,8 +6,8 @@ a:hover { color: #4B58A6; }
 }
 
 .filter-box { 
-  height: 15px; 
-  width: 15px;  
+  height: 20px; 
+  width: 20px;  
   display: inline-block;
   *border-right-width: 2px;
   *border-bottom-width: 2px;
@@ -54,4 +54,5 @@ hr {margin-top: 5px; margin-bottom: 5px;}
 	height:430px;
 	overflow:scroll;} 
 
+div#results_list {max-height: 350px; overflow: scroll;}
 #viewmode {padding: 6px 6px;}
