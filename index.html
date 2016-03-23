@@ -216,6 +216,19 @@
           $('#search').click(function(){
             myMap.doSearch();
           });
+         
+         $("#viewmode").click(function(){
+              if($("#map_canvas").is(":visible")){$("#viewmode").html("Show map");
+              
+          $("#listCanvas").show();
+          $("#map_canvas").hide()}else{
+            $("#viewmode").html("Show list");
+            $("#map_canvas").show();
+            $("#listCanvas").hide()}});
+          
+          
+          
+          
           
           $('#find_me').click(function(){
             myMap.findMe(); 
