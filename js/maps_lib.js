@@ -331,7 +331,7 @@ if (text_search != '')
     
     MapsLib.prototype.getList = function(whereClause) {
     var self = this;
-    var selectColumns = 'name, business-type, public-location, website';
+    var selectColumns = "'name', 'business-type', 'public-location', 'website' ";
 
     self.query({ 
       select: selectColumns, 
