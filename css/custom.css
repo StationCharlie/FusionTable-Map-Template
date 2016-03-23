@@ -1,4 +1,4 @@
-a { color: #4B58A6; padding-left: 5px; padding-right: 5px; }
+a { color: #4B58A6; }
 a:hover { color: #4B58A6; }
 
 #map_canvas img {
@@ -44,6 +44,6 @@ ul, ol {padding-left: 15px;}
 .btn-primary:hover {border-color: #c33; background-image: linear-gradient(to bottom,#c33,#f44336);}
 .navbar-header .navbar-brand {color: #c33;}
 label {font-weight: normal;}
-.logo {float: right; padding-top: 5px; padding-bottom: 5px; padding-left: 15px;}
+.logo {float: right; padding-top: 5px; padding-bottom: 5px; padding-left: 15px; padding-right: 10px; }
 .navbar {margin-bottom: 10px;}
-/* {padding-left: 5px; padding-right: 5px;} */
+
