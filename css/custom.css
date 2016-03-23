@@ -44,3 +44,4 @@ ul, ol {padding-left: 15px;}
 .btn-primary:hover {border-color: #c33; background-image: linear-gradient(to bottom,#c33,#f44336);}
 .navbar-header .navbar-brand {color: #c33;}
 label {font-weight: normal;}
+.logo {float: right;}
