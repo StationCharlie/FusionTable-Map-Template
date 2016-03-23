@@ -54,4 +54,10 @@ hr {margin-top: 5px; margin-bottom: 5px;}
 	height:430px;
 	overflow:scroll;} 
 
+div#results_list {max-height: 350px; overflow: scroll;}
 #viewmode {padding: 6px 6px;}
+
+.dl-horizontal {margin: 5px 0;	border: 0; border-bottom: 1px solid #c33; padding-bottom: 15px; padding-top: 10px;}
+
+h5, .h5 {font-size: 12px;}
+ul, ol {margin-right: -10px;}

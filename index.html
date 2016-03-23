@@ -35,7 +35,8 @@
           <ul class="nav navbar-nav navbar-right">
             <li class='active'><a href="index.html">Worldwide Drone Info Map</a></li>
             <li><a href="drone-spotters.html">Drone Spotters</a></li>
-            <li><a href="za-no-fly-zones.html">ZA No Fly Zones Map</a></li>
+            <li><a href="za-no-fly-zones.html">Statistics</a></li>
+            <li><a href="za-no-fly-zones.html">Other Maps</a></li>
             <li><a href="about.html">Want a Featured Listing?</a></li>
              <div class=logo> <a href=http://www.suasnews.com><img alt=suasnews.com src="images/suasnews-logo-drone-info-map-header.png"></a> </div>
           </ul>
@@ -121,7 +122,7 @@
             </p>
             <p>
               
-                within
+               within
                 <select id='search_radius'>
                   <option value=805>1/2 mile</option>
                   <option value=1610>1 mile</option>
@@ -146,17 +147,12 @@
               <i class='glyphicon glyphicon-repeat'></i>
               Reset
             </a>
-            
-            <div class=pull-right> <a class='btn btn-default' id=viewmode href=#> Show List </a> </div>
-            
-           <!-- <div id='results_list'></div> -->
+            <!-- <div class=pull-right> <a class='btn btn-default' id=viewmode href=#> Show List </a> </div> -->
             
           </div>
-          
+          <!-- <div class='well'> <div id='results_list'></div> </div> -->
       </div>
-        
-        
-
+      
         <div class='col-md-8'>
           <noscript>
             <div class='alert alert-info'>
@@ -165,19 +161,21 @@
             </div>
           </noscript>
        
-      <div class=span8>
-        <div id='listCanvas' style=display:none>
-          <div id='resultsList'></div>
-        </div>
-        <div id='map_canvas'> </div>
-      </div>
+          <!-- <div class=span8>   
+            <div id=listCanvas style=display:none> 
+              <div id=resultsList></div> 
+            </div> 
+            <div id=map_canvas></div> 
+          </div> -->
        
-          <!-- <div id='map_canvas'></div> -->
+          <div id='map_canvas'></div>
+          
           <p class='pull-right'>
             <!-- <a href='http://derekeder.com/searchable_map_template/'>Searchable Map Template</a> by <a href='http://derekeder.com'>Derek -->
             Worldwide Commercial Drone Info Map v2 by <a href='http://www.suasnews.com'>sUASnews.com</a>
         </p>
-        </div>
+        
+       </div>
       </div>
     </div>
     
@@ -204,6 +202,7 @@
             map_center:         [20, 0],
             locationScope:      "",
             defaultZoom:        2,
+            addrMarkerImage:    "images/search-location-pin.png"
           });
 
           var autocomplete = new google.maps.places.Autocomplete(document.getElementById('search_address'));
@@ -224,18 +223,14 @@
             myMap.doSearch();
           });
          
-         $("#viewmode").click(function(){
-              if($("#map_canvas").is(":visible")){$("#viewmode").html("Show map");
+         //$("#viewmode").click(function(){
+             // if($("#map_canvas").is(":visible")){$("#viewmode").html("Show map");
               
-          $("#listCanvas").show();
-          $("#map_canvas").hide()}else{
-            $("#viewmode").html("Show list");
-            $("#map_canvas").show();
-            $("#listCanvas").hide()}});
-          
-          
-          
-          
+         // $("#listCanvas").show();
+          //$("#map_canvas").hide()}else{
+            //$("#viewmode").html("Show list");
+            //$("#map_canvas").show();
+           // $("#listCanvas").hide()}});
           
           $('#find_me').click(function(){
             myMap.findMe(); 
