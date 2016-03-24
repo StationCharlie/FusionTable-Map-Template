@@ -191,15 +191,15 @@ self.whereClause += " AND " + type_column + " IN ('" + tempWhereClause.join("','
 var type_column = "'business-type'";
 var tempWhereClause = [];
 if ( $("#cbType7").is(':checked')) tempWhereClause.push("FAA 333 Exemption Holder");
-if ( $("#cbType8").is(':checked')) tempWhereClause.push("South African ROC Holder");
-if ( $("#cbType9").is(':checked')) tempWhereClause.push("Drone Law Attorney");
-if ( $("#cbType10").is(':checked')) tempWhereClause.push("Drone Manufacturer");
-if ( $("#cbType11").is(':checked')) tempWhereClause.push("Drone Insurance Provider");
-//if ( $("#cbType12").is(':checked')) tempWhereClause.push("TBA");
-//if ( $("#cbType13").is(':checked')) tempWhereClause.push("TBA");
-//if ( $("#cbType14").is(':checked')) tempWhereClause.push("TBA");
-//if ( $("#cbType15").is(':checked')) tempWhereClause.push("TBA");
-//if ( $("#cbType16").is(':checked')) tempWhereClause.push("TBA");
+if ( $("#cbType8").is(':checked')) tempWhereClause.push("UK CAA Approved Commercial SUA Operator");
+if ( $("#cbType9").is(':checked')) tempWhereClause.push("Ireland CAA Appoved Commercial SUA Operator");
+if ( $("#cbType10").is(':checked')) tempWhereClause.push("Australian UAS Operator Certificate Holder");
+if ( $("#cbType11").is(':checked')) tempWhereClause.push("South African ROC Holder");
+if ( $("#cbType12").is(':checked')) tempWhereClause.push("Drone Retailer");
+if ( $("#cbType13").is(':checked')) tempWhereClause.push("Drone Law Attorney");
+if ( $("#cbType14").is(':checked')) tempWhereClause.push("Drone Insurance Provider");
+if ( $("#cbType15").is(':checked')) tempWhereClause.push("Drone Manufacturer");
+if ( $("#cbType16").is(':checked')) tempWhereClause.push("Other Manufacturer");
 self.whereClause += " AND " + type_column + " IN ('" + tempWhereClause.join("','") + "')";
 
 
