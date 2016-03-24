@@ -67,12 +67,10 @@ ul, ol {margin-right: -15px;}
 
 .form-control {height: 24px;}
 
-@media (min-width: 992px)
 .col-md-4 {
     width: 40%;
 }
 
-@media (min-width: 992px)
 .col-md-8 {
     width: 60%;
 }
