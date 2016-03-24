@@ -188,8 +188,23 @@ if ( $("#cbType5").is(':checked')) tempWhereClause.push("Manufacturer");
 if ( $("#cbType6").is(':checked')) tempWhereClause.push("Service Provider");
 self.whereClause += " AND " + type_column + " IN ('" + tempWhereClause.join("','") + "')";
 
-if ( $("#select_type").val() != "")
-      self.whereClause += " AND 'business-type' = '" + $("#select_type").val() + "'";
+var type_column = "'business-type'";
+var tempWhereClause = [];
+if ( $("#cbType7").is(':checked')) tempWhereClause.push("FAA 333 Exemption Holder");
+if ( $("#cbType8").is(':checked')) tempWhereClause.push("South African ROC Holder");
+//if ( $("#cbType9").is(':checked')) tempWhereClause.push("TBA");
+//if ( $("#cbType10").is(':checked')) tempWhereClause.push("TBA");
+//if ( $("#cbType11").is(':checked')) tempWhereClause.push("TBA");
+//if ( $("#cbType12").is(':checked')) tempWhereClause.push("TBA");
+//if ( $("#cbType13").is(':checked')) tempWhereClause.push("TBA");
+//if ( $("#cbType14").is(':checked')) tempWhereClause.push("TBA");
+//if ( $("#cbType15").is(':checked')) tempWhereClause.push("TBA");
+//if ( $("#cbType16").is(':checked')) tempWhereClause.push("TBA");
+self.whereClause += " AND " + type_column + " IN ('" + tempWhereClause.join("','") + "')";
+
+
+//if ( $("#select_type").val() != "")
+//      self.whereClause += " AND 'business-type' = '" + $("#select_type").val() + "'";
 
 var text_search = $("#text_search").val().replace("'", "\\'");
 if (text_search != '')
