@@ -41,7 +41,7 @@ ul, ol {padding-left: 15px;}
 .col-md-8 {padding-left: 7.5px;}
 .alert-info {font-size: 14px; text-align: center; color: #eee; background-color: #c33; border-color: #c33;}
 .alert {padding: 4px; margin-bottom: 10px;}
-.btn-primary {color: #eee; background-color: #c33; border-color: #c33;}
+.btn-primary {color: #eee; background-color: #c33; border-color: #c33; width: 50%;}
 .btn-primary:hover {border-color: #c33; background-image: linear-gradient(to bottom,#c33,#f44336);}
 .navbar-header .navbar-brand {color: #c33;}
 label {font-weight: normal;}
