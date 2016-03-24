@@ -188,6 +188,9 @@ if ( $("#cbType5").is(':checked')) tempWhereClause.push("Manufacturer");
 if ( $("#cbType6").is(':checked')) tempWhereClause.push("Service Provider");
 self.whereClause += " AND " + type_column + " IN ('" + tempWhereClause.join("','") + "')";
 
+if ( $("#select_type").val() != "")
+      self.whereClause += " AND 'business-type' = '" + $("#select_type").val() + "'";
+
 var text_search = $("#text_search").val().replace("'", "\\'");
 if (text_search != '')
   self.whereClause += " AND 'name' contains ignoring case '" + text_search + "'";
