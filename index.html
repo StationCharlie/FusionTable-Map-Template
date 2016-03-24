@@ -339,5 +339,27 @@
         });
       //]]>
     </script>
+    
+    <script language="javascript">function checkAll(bx) {
+  var cbs = document.getElementsByTagName('input');
+  for(var i=0; i < cbs.length; i++) {
+    if(cbs[i].type == 'checkbox') {
+    cbs[i].checked = bx.checked;
+   }
+ }
+}
+</script> <script language="javascript">function checkAll(formname, checktoggle)
+{
+  var checkboxes = new Array(); 
+  checkboxes = document[formname].getElementsByTagName('input');
+ 
+  for (var i=0; i<checkboxes.length; i++)  {
+    if (checkboxes[i].type == 'checkbox')   {
+      checkboxes[i].checked = checktoggle;
+    }
+  }
+}
+</script>
+    
   </body>
 </html>
