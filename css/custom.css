@@ -66,3 +66,5 @@ ul, ol {margin-right: -15px;}
 .btn-mini {padding: 0px 6px; font-size: 11.25px; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;}
 
 .form-control {width: 50%; height: 24px;}
+h5#name-search-heading {float: left; margin-right: 10px;}
+h5#address-search-heading {float: left; margin-right: 10px;}
