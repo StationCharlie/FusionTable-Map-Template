@@ -61,3 +61,5 @@ div#results_list {max-height: 350px; overflow: scroll;}
 
 h5, .h5 {font-size: 12px;}
 ul, ol {margin-right: -10px;}
+
+.filter-aqua {background-color: #00FFFF;}
