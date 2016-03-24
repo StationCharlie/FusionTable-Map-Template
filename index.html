@@ -117,7 +117,7 @@
           <form name="type">
           <div class='well'>
             
-             <input type="button" class="btn btn-mini" onclick="javascript:checkAll('type', false);" value="Clear All" />
+             <input type="button" id="clear_all" class="btn btn-mini" onclick="javascript:checkAll('type', false);" value="Clear All" />
             
               <div class='span6'>
             
@@ -298,7 +298,7 @@
             myMap.doSearch();
           });
           
-          $(':checkALL').click(function(){
+          $('#clear_all').click(function(){
             myMap.doSearch();
           });
 
