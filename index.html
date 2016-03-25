@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang='en'>
   <head>
-    <title>Space Race Info Map</title>
+    <title>World Drone Maps by sUAS News</title>
     <meta charset='utf-8' />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta content='' name='description' />
@@ -9,6 +9,7 @@
     <!-- Styles -->
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/custom.css"/>
+    <script>(function(d,e,j,h,f,c,b){d.GoogleAnalyticsObject=f;d[f]=d[f]||function(){(d[f].q=d[f].q||[]).push(arguments)},d[f].l=1*new Date();c=e.createElement(j),b=e.getElementsByTagName(j)[0];c.async=1;c.src=h;b.parentNode.insertBefore(c,b)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create","UA-242088-12","auto");ga("send","pageview");</script>
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script type="text/javascript" src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -17,18 +18,27 @@
   <body>
     <div class='navbar navbar-default navbar-static-top'>
       <div class='container-fluid'>
+        
+        
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class='navbar-brand' href='http://www.stationcharlie.com'>Space Race Info Map</a>
+          <a class='navbar-brand' href='http://www.suasnews.com/'>Drone Pilots / Operators, Manufacturers, Retailers, Service Providers</a>
+         
+          
         </div>
+        
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li class='active'><a href="index.html">Map</a></li>
-            <li><a href="about.html">About</a></li>
+            <li class='active'><a href="index.html">Drone World Map</a></li>
+            <!-- <li><a href="drone-spotters.html">Drone Spotters</a></li> -->
+            <!-- <li><a href="za-no-fly-zones.html">Statistics</a></li> -->
+            <!-- <li><a href="za-no-fly-zones.html">Other Maps</a></li> -->
+            <li><a href="about.html">Want a Featured Listing?</a></li>
+             <div class=logo> <a href=http://www.suasnews.com><img alt=suasnews.com src="images/suasnews-logo-drone-info-map-header.png"></a> </div>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -36,50 +46,174 @@
     <div class='container-fluid'>
       <div class='row'>
         <div class='col-md-4'>
-          <p>Use the functions below to display the required information</p>
+          <p>Welcome to the Drone World Map. Here you will find commercially authorized drone pilots/operators, drone manufacturers,  retailers and service providers. Use the functions below to find the information you need. </p>
+          
+          <!-- <div class='alert alert-info' id='result_box' ><strong id='result_count'></strong></div> -->
+          
+          <form name="category">
           <div class='well'>
+            
+            
+              <div class='span6'>
+            
            
-
 <ul class='inputs-list unstyled'>
   <li>
     <label class='checkbox inline'>
       <input type='checkbox' id='cbType1' />
-      <span class='filter-box filter-red'></span>
-      Private Companies
+      <span class='filter-box filter-white'></span>
+      Featured
     </label>
   </li>
   <li>
     <label class='checkbox inline'>
       <input type='checkbox' id='cbType2' />
-      <span class='filter-box filter-green'></span>
-      Launch Sites
+      <!-- <span class='filter-box filter-red'></span> -->
+      All Others
     </label>
   </li>
+  </ul>
+  </div>
+  
+
+     <div class='span6'>
+  <ul class='inputs-list unstyled'>
   <li>
     <label class='checkbox inline'>
       <input type='checkbox' id='cbType3' />
-      <span class='filter-box filter-yellow'></span>
-      Development Facilities
+      <span class='filter-box filter-red'></span>
+      Drone Operators
     </label>
   </li>
   <li>
     <label class='checkbox inline'>
       <input type='checkbox' id='cbType4' />
-      <span class='filter-box filter-blue'></span>
-      National Space Agencies
+       <span class='filter-box filter-yellow'></span>
+      Drone Stores / Retailers
     </label>
   </li>
-</ul>
-<h5>Search by name</h5>
-        <input class=form-control id=text_search placeholder='Enter a name' type="text"/>
+  <li>
+    <label class='checkbox inline'>
+      <input type='checkbox' id='cbType5' />
+       <span class='filter-box filter-blue'></span>
+      Drone Manufacturers
+    </label>
+  </li>
+  <li>
+    <label class='checkbox inline'>
+      <input type='checkbox' id='cbType6' />
+      <span class='filter-box filter-aqua'></span>
+      Drone Service Providers
+    </label>
+  </li>
+  </ul>
+</div>
+
+</div>
+</form>
+
+          <form name="type">
+          <div class='well'>
+            <h5>
+             <input type="button" id="clear_all" class="btn btn-mini" onclick="javascript:checkAll('type', false);" value="Clear All" />
+             <input type="button" id="show_all" class="btn btn-mini" onclick="javascript:checkAll('type', true);" value="Show All" />
+             </h5>
+           
+              <div class='span6'>
+            
+<ul class='inputs-list unstyled'>
+  <li>
+    <label class='checkbox inline'>
+      <input type='checkbox' id='cbType7' />
+      <!-- <span class='filter-box filter-white'></span> -->
+      USA Operators (333)
+    </label>
+  </li>
+  <li>
+    <label class='checkbox inline'>
+      <input type='checkbox' id='cbType8' />
+      <!-- <span class='filter-box filter-red'></span> -->
+      UK Operators
+    </label>
+  </li>
+   <li>
+    <label class='checkbox inline'>
+      <input type='checkbox' id='cbType9' />
+      <!-- <span class='filter-box filter-red'></span> -->
+      Ireland Operators
+    </label>
+  </li>
+  <li>
+    <label class='checkbox inline'>
+      <input type='checkbox' id='cbType10' />
+      <!-- <span class='filter-box filter-red'></span> -->
+      Australia Operators
+    </label>
+  </li>
+  <li>
+    <label class='checkbox inline'>
+      <input type='checkbox' id='cbType11' />
+      <!-- <span class='filter-box filter-red'></span> -->
+      South Africa Operators
+    </label>
+  </li>
+  </ul>
+  </div>
+  
+
+     <div class='span6'>
+  <ul class='inputs-list unstyled'>
+  <li>
+    <label class='checkbox inline'>
+      <input type='checkbox' id='cbType12' />
+      <!-- <span class='filter-box filter-red'></span> -->
+      Drone Stores / Retailers
+    </label>
+  </li>
+  <li>
+    <label class='checkbox inline'>
+      <input type='checkbox' id='cbType13' />
+      <!-- <span class='filter-box filter-yellow'></span> -->
+      Drone Law Attorneys
+    </label>
+  </li>
+  <li>
+    <label class='checkbox inline'>
+      <input type='checkbox' id='cbType14' />
+      <!-- <span class='filter-box filter-blue'></span> -->
+      Drone Insurance Providers
+    </label>
+  </li>
+  <li>
+    <label class='checkbox inline'>
+      <input type='checkbox' id='cbType15' />
+      <!-- <span class='filter-box filter-aqua'></span> -->
+      Drone Manfacturers
+    </label>
+  </li>
+  <li>
+    <label class='checkbox inline'>
+      <input type='checkbox' id='cbType15' />
+      <!-- <span class='filter-box filter-aqua'></span> -->
+      Other Manufacturers
+    </label>
+  </li>
+  </ul>
+</div>
+
+</div>
+</form>
+
+<div class='well'>
+<p>
+<!-- <h5 id="name-search-heading"> Search by name </h5> -->
+<input class=form-control id=text_search placeholder='Search by name' type="text"/> 
+</p>       
         
-<h5>Search by address <small>(<a id='find_me' href='#'>find me</a>)</small> </h5>
-            <p>
-              <input class='form-control' id='search_address' placeholder='Enter an address or an intersection' type='text' />
-            </p>
-            <p>
-              
-                within
+ <p> <!-- <h5 id="address-search-heading">Search by address  </h5> --> 
+ <input class='form-control' id='search_address' placeholder='Search by address' type='text' />  </p>
+               <p>
+               within
                 <select id='search_radius'>
                   <option value=805>1/2 mile</option>
                   <option value=1610>1 mile</option>
@@ -93,22 +227,24 @@
                    <option value=805000>500 miles</option>
                    <option value=1610000>1000 miles</option>
                 </select>
+                or <small>(<a id='find_me' href='#'>find me</a>)</small>
               
-            </p> 
-            <br />
+            </p>
+            <!-- <br /> -->
             <a class='btn btn-primary' id='search' href='#'>
               <i class='glyphicon glyphicon-search'></i>
               Search
             </a>
-            <a class='btn btn-default' id='reset' href='#'>
+            <div class=pull-right> <a class='btn btn-default' id='reset' href='#'>
               <i class='glyphicon glyphicon-repeat'></i>
               Reset
-            </a>
+            </a> </div>
+            <!-- <div class=pull-right> <a class='btn btn-default' id=viewmode href=#> Show List </a> </div> -->
+            
           </div>
-          <div class='alert alert-info' id='result_box' ><strong id='result_count'></strong></div>
-        </div>
-        
-
+          <!-- <div class='well'> <div id='results_list'></div> </div> -->
+      </div>
+      
         <div class='col-md-8'>
           <noscript>
             <div class='alert alert-info'>
@@ -117,16 +253,24 @@
             </div>
           </noscript>
        
+          <!-- <div class=span8>   
+            <div id=listCanvas style=display:none> 
+              <div id=resultsList></div> 
+            </div> 
+            <div id=map_canvas></div> 
+          </div> -->
+       <div class='alert alert-info' id='result_box' ><strong id='result_count'></strong></div>
           <div id='map_canvas'></div>
+          
           <p class='pull-right'>
             <!-- <a href='http://derekeder.com/searchable_map_template/'>Searchable Map Template</a> by <a href='http://derekeder.com'>Derek -->
-            Space Race Info Map v1 by <a href='http://www.stationcharlie.com'>StationCharlie.com</a>
+            Drone World Map v1 by <a href='http://www.suasnews.com'>sUASnews.com</a>
         </p>
-        </div>
+        
+       </div>
       </div>
     </div>
     
-
 
     <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="js/jquery.address.js"></script>
@@ -144,17 +288,26 @@
         
         $(function() {
           var myMap = new MapsLib({
-            fusionTableId:      "1T5Kty-_lBIWDqNH1HHCiY_MyDI8vPtxT_hrqcfc1",
-            googleApiKey:       "AIzaSyBYE9fwgyI2Hqn3gPoyvuIko9D6DYMD35o",
+            fusionTableId:      "1s8AwoIpUKBBFIBl6QIRCqBusBT15Gvc_r0MF1uih",
+            googleApiKey:       "AIzaSyBWr-5eDi3RuxNC6_RXt90G2SCnaEuZGpo",
             locationColumn:     "location",
             map_center:         [20, 0],
             locationScope:      "",
             defaultZoom:        2,
+            addrMarkerImage:    "images/search-location-pin.png"
           });
 
           var autocomplete = new google.maps.places.Autocomplete(document.getElementById('search_address'));
       
           $(':checkbox').click(function(){
+            myMap.doSearch();
+          });
+          
+          $('#clear_all').click(function(){
+            myMap.doSearch();
+          });
+          
+          $('#show_all').click(function(){
             myMap.doSearch();
           });
 
@@ -169,6 +322,15 @@
           $('#search').click(function(){
             myMap.doSearch();
           });
+         
+         //$("#viewmode").click(function(){
+             // if($("#map_canvas").is(":visible")){$("#viewmode").html("Show map");
+              
+         // $("#listCanvas").show();
+          //$("#map_canvas").hide()}else{
+            //$("#viewmode").html("Show list");
+            //$("#map_canvas").show();
+           // $("#listCanvas").hide()}});
           
           $('#find_me').click(function(){
             myMap.findMe(); 
@@ -190,5 +352,27 @@
         });
       //]]>
     </script>
+    
+    <script language="javascript">function checkAll(bx) {
+  var cbs = document.getElementsByTagName('input');
+  for(var i=0; i < cbs.length; i++) {
+    if(cbs[i].type == 'checkbox') {
+    cbs[i].checked = bx.checked;
+   }
+ }
+}
+</script> <script language="javascript">function checkAll(formname, checktoggle)
+{
+  var checkboxes = new Array(); 
+  checkboxes = document[formname].getElementsByTagName('input');
+ 
+  for (var i=0; i<checkboxes.length; i++)  {
+    if (checkboxes[i].type == 'checkbox')   {
+      checkboxes[i].checked = checktoggle;
+    }
+  }
+}
+</script>
+    
   </body>
 </html>

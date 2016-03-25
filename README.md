@@ -1,12 +1,12 @@
-# Space Race Info Map
+# Project Blue Marble
 
-[See the working demo &raquo;](http://stationcharlie.github.io/Space-Race-Info-Map/)
+[See the working demo &raquo;](http://charliehotel.github.io/Project-Blue-Marble/)
 
 
 
 ## Copyright and attribution
 
-Copyright (c) 2016 StationCharlie.com 
+Copyright (c) 2016 projectbluemarble 
 
 Released under the MIT License.
 
